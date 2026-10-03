@@ -1,0 +1,509 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Task-8 </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <meta charset="utf-8">
+   
+</head>
+<body>
+<!------------------ header ------------------>
+    <header>
+
+        <div class="header">
+           <img class="logo" src="image/logo.png" alt="Nada jacket">
+        </div>
+
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Categories</a>
+            <a href="#">Cart</a>
+        </nav>
+
+
+        <div class="header-right">
+            <input type="search" id="search" placeholder="Search for a jacket...">
+        </div>
+        
+        <button id="cartButton">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <span id="cartCount">0</span>
+        </button>  
+    </header>
+
+<!---------------- home --------------------->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Find Your Perfect Jacket</h2>
+            <p>
+                Discover our latest collection of stylish
+                jackets for every season.
+            </p>
+
+            <button id="shopNow">
+                Shop Now
+            </button>
+
+        </div>
+    </section>
+
+
+
+   <!--------------------- categories --------------------------->
+
+    <section class="categories" id="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="category-buttons">
+            <button class="category-btn" data-category="all">
+                All Jackets
+            </button>
+
+            <button class="category-btn" data-category="blazer">
+                Blazers
+            </button>
+
+            <button class="category-btn" data-category="winter">
+                Winter Jackets
+            </button>
+
+            <button class="category-btn" data-category="coat">
+                Coats
+            </button>
+
+            <button class="category-btn" data-category="leather">
+                Leather Jackets
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+  <!--------------------- products ------------------------>
+
+    <section class="shop" id="shop">
+        <h2>Latest Jackets</h2>
+        <div class="products-list">
+
+            <!-- Product 1 -->
+
+            <div class="product" data-category="blazer" data-price="750">
+                <div class="product-image">
+
+                    <span class="new"> NEW </span>
+                    <img src="image/image1.jpg"  alt="Classic Beige Blazer">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Classic Beige Blazer</h3>
+                    <p>
+                        Elegant beige blazer for a simple
+                        and stylish look.
+                    </p>
+
+                    <p class="price"> 750 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 2 -->
+
+            <div class="product" data-category="winter" data-price="1200">
+                <div class="product-image">
+                    <span class="sale"> SALE </span>
+
+                    <img src="image/image2.jpg" alt="Black Long Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Black Long Jacket</h3>
+                    <p>
+                        Stylish black long jacket with
+                        a modern design.
+                    </p>
+
+                    <p class="price"> 1200 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+
+                </div>
+            </div>
+
+
+
+            <!-- Product 3 -->
+
+            <div class="product" data-category="winter" data-price="1500">
+                <div class="product-image">
+                    <img src="image/image4.jpg" alt="Blue Puffer Jacket">
+                </div>
+
+                <div class="product-info">
+                    <h3>Blue Puffer Jacket</h3>
+                    <p>
+                        Warm blue puffer jacket perfect
+                        for cold winter days.
+                    </p>
+
+                    <p class="price"> 1500 EGP </p>
+
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 4 -->
+
+            <div class="product" data-category="winter" data-price="1400">
+                <div class="product-image">
+                    <span class="new"> NEW </span>
+                    <img src="image/image5.jpg" alt="Beige Winter Jacket">
+                
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Beige Winter Jacket</h3>
+
+                    <p>
+                        Comfortable jacket designed to keep
+                        you warm in winter.
+                    </p>
+
+                    <p class="price"> 1400 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 5 -->
+
+            <div class="product" data-category="winter" data-price="1000">
+                <div class="product-image">
+                    <img src="image/image12.webp" alt="Blue Casual Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Blue Casual Jacket</h3>
+                    <p>
+                        Simple blue jacket suitable for
+                        everyday outfits.
+                    </p>
+
+                    <p class="price"> 1000 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 6 -->
+
+            <div class="product" data-category="winter" data-price="900">
+                <div class="product-image">
+
+                    <img src="image/shop1.webp" alt="Navy Casual Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Navy Casual Jacket</h3>
+
+                    <p>
+                        Comfortable navy jacket with
+                        a casual style.
+                    </p>
+
+                    <p class="price"> 900 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 7 -->
+
+            <div class="product" data-category="coat" data-price="1600">
+                <div class="product-image">
+                    <span class="sale"> SALE </span>
+
+                    <img src="image/image19.webp" alt="Black Long Coat">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>White Long Coat</h3>
+                    <p>
+                        Elegant white long coat perfect
+                        for a stylish winter look.
+                    </p>
+
+                    <p class="price"> 1600 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 8 -->
+
+            <div class="product" data-category="leather" data-price="1350">
+                <div class="product-image">
+
+                    <img src="image/image11.jpg" alt="Brown Leather Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Brown Leather Jacket</h3>
+                    <p>
+                        Classic brown jacket with a
+                        stylish leather look.
+                    </p>
+
+                    <p class="price"> 1350 EGP </p>
+                    <button class="add-cart"> Add To Cart </button> 
+                </div>
+            </div>
+
+
+
+            <!-- Product 9 -->
+
+            <div class="product" data-category="winter" data-price="1100">
+                <div class="product-image">
+
+                    <img src="image/image13.webp" alt="Black White Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Black & White Jacket</h3>
+
+                    <p>
+                        Unique black and white jacket
+                        with an elegant design.
+                    </p>
+
+                    <p class="price"> 1100 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 10 -->
+
+            <div class="product" data-category="blazer" data-price="1200">
+                <div class="product-image">
+
+                    <span class="new"> NEW </span>
+                    <img src="image/image14.webp" alt="Cream Blazer">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Cream Blazer</h3>
+                    <p>
+                        Elegant cream blazer suitable
+                        for a smart look.
+                    </p>
+
+                    <p class="price"> 1200 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 11 -->
+
+            <div class="product" data-category="winter" data-price="1050">
+                <div class="product-image">
+
+                    <img src="image/image15.webp" alt="Light Blue Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Light Blue Jacket</h3>
+
+                    <p>
+                        Light blue jacket with a soft
+                        and elegant appearance.
+                    </p>
+
+                    <p class="price"> 1050 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 12 -->
+
+            <div class="product" data-category="winter" data-price="1150">
+                <div class="product-image">
+
+                    <img src="image/image16.webp" alt="Burgundy Jacket">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Burgundy Jacket</h3>
+                    <p>
+                        Beautiful burgundy jacket with
+                        a fashionable style.
+                    </p>
+
+                    <p class="price"> 1150 EGP</p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 13 -->
+
+            <div class="product" data-category="coat" data-price="1700">
+                <div class="product-image">
+
+                    <span class="sale">SALE</span>
+
+                    <img src="image/image17.webp" alt="White Long Coat">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>White Long Coat</h3>
+                    <p>
+                        Elegant white long coat with
+                        a classic design.
+                    </p>
+
+                    <p class="price"> 1700 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 14 -->
+
+            <div class="product" data-category="coat" data-price="1450">
+                <div class="product-image">
+
+                    <img src="image/sh image.webp" alt="Light Pink Coat">
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Light Pink Coat</h3>
+                    <p>
+                        Soft pink coat with a beautiful
+                        feminine style.
+                    </p>
+
+                    <p class="price"> 1450 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+
+            <!-- Product 15 -->
+
+            <div class="product" data-category="blazer" data-price="1250">
+                <div class="product-image">
+
+                    <span class="new"> NEW </span>
+                    <img src="image/image20.webp" alt="Pink Blazer"> 
+                </div>
+
+
+                <div class="product-info">
+                    <h3>Pink Blazer</h3>
+
+                    <p>
+                        Stylish pink blazer with a
+                        modern elegant look.
+                    </p>
+                    <p class="price"> 1250 EGP </p>
+                    <button class="add-cart"> Add To Cart </button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+   <!---------------- cart ------------------->
+
+    <section class="cart-section" id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems">
+        </div>
+
+
+        <div class="cart-result">
+
+            <p>
+                Subtotal:
+                <span id="subtotal">0</span>
+                EGP
+            </p>
+
+            <p>
+                Discount:
+                <span id="discount">0</span>
+                EGP
+            </p>
+
+            <h3>
+                Total:
+                <span id="total">0</span>
+                EGP
+            </h3>
+
+
+            <p id="discountMessage"></p>
+
+            <button id="showPrice"> Show Price </button>
+
+        </div>
+    </section>
+
+
+
+   <!----------------- footer --------------------->
+
+    <footer>
+
+        <h3>Nada Jacket Store</h3>
+        <p> Stylish jackets for every season. </p>
+
+        <p> © 2026 Nada Jacket Store </p>
+
+    </footer>
+
+
+
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
